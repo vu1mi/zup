@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "minify": "terser zup.js -o  zup.min.js && csso zup.css -o zup.mini.css"
+  },
+  "dependencies": {
+    "csso-cli": "^4.0.2",
+    "terser": "^5.42.0"
+  }
+}
