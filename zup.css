@@ -1,4 +1,4 @@
-.zup-backdrop {
+.zup__backdrop {
   position: fixed;
   inset: 0;
   display: flex;
@@ -11,26 +11,26 @@
   transition-duration: 0.3s;
 }
 
-.zup-backdrop.show {
+.zup__backdrop--show {
   opacity: 1;
   visibility: visible;
 }
 
-.zup-backdrop.show .zup-container {
+.zup__backdrop--show .zup__container {
   transform: scale(1);
 }
 
-.zup-container {
+.zup__container {
   position: relative;
   width: min(600px, 90%);
-  padding: 20px 20px 0;
+  padding: 20px;
   border-radius: 6px;
   background: #fff;
   transform: scale(0);
   transition: transform 0.3s;
 }
 
-.zup-close {
+.zup--close {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -42,20 +42,20 @@
   font-size: 2rem;
 }
 
-.zup-close:hover {
+.zup--close:hover {
   color: #333;
 }
 
-.zup-content {
+.zup__content {
   max-height: 80vh;
   overflow-y: auto;
 }
 
-.zup-footer {
+.zup__footer {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 .no-scroll {
