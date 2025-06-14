@@ -144,7 +144,7 @@ Zup.prototype.open = function () {
   }, 0);
 
   // Disable scrolling
-  if (this.opt.enableScollLock) {
+  if (this.opt.enableScollLock && Zup.elements.length == 1) {
     const target = this.opt.consoLockTarget();
 
     const targetPaddingRight = parseInt(getComputedStyle(target).paddingRight);
